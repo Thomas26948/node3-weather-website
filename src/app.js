@@ -44,7 +44,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title: 'hey',
+        title: 'Help page',
         name: 'Invite',
         TextDescription: 'Webpage'
     })
