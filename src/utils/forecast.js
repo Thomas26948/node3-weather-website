@@ -8,7 +8,7 @@ const forecast = (latitude,longitude,callback)=>{
         }else if(body.error){
             callback('Unable to find location',undefined)
         }else{
-            callback(undefined,body.current.weather_descriptions[0]+". It is currently " + body.current.temperature +" degres. It feels like "+body.current.feelslike + " degres")
+            callback(undefined,body.current.weather_descriptions[0]+". Il fait actuellement " + body.current.temperature +" degres. Le ressenti est de "+body.current.feelslike + " degres." + " Heure actuelle : "+ body.current.observation_time )
         }
     })
 }
