@@ -1,4 +1,4 @@
-console.log('Client side javascript file si loaded')
+//console.log('Client side javascript file si loaded')
 
 //puzzle.mead.io/puzzle
 
