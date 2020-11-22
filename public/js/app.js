@@ -20,7 +20,9 @@ weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     messageOne.textContent = 'Loading'
     const location = search.value
-    const url= "http://localhost:3000/weather?address="+location
+
+//on a enlevé http://localhost comme dans le app.get(/)
+    const url= "/weather?address="+location
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if (data.error){
